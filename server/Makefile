@@ -4,6 +4,8 @@ create:
 	docker-compose exec app composer create-project --prefer-dist laravel/laravel laravel
 	docker-compose exec app chmod -R 777 laravel/storage laravel/bootstrap/cache
 	docker-compose exec app cp laravel/.env.example laravel/.env
+
+setup:	
 	docker-compose exec app php laravel/artisan key:generate
 	docker-compose exec app php laravel/artisan storage:link
 
