@@ -1,0 +1,5 @@
+/backend/public/build
+/backend/public/hot
+/backend/public/storage
+/.idea
+/.vscode
