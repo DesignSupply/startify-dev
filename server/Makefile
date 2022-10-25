@@ -33,20 +33,20 @@ update:
 	docker-compose exec app composer update
 
 migrate:
-	docker-compose exec app php artisan migrate
+	docker-compose exec app php laravel/artisan migrate
 
 fresh:
-	docker-compose exec app php artisan migrate:fresh --seed
+	docker-compose exec app php laravel/artisan migrate:fresh --seed
 
 seed:
-	docker-compose exec app php artisan db:seed
+	docker-compose exec app php laravel/artisan db:seed
 
 optimize:
-	docker-compose exec app php artisan optimize
-	docker-compose exec app php artisan route:cache
+	docker-compose exec app php laravel/artisan optimize
+	docker-compose exec app php laravel/artisan route:cache
 
 tinker:
-	docker-compose exec app php artisan tinker
+	docker-compose exec app php laravel/artisan tinker
 
 db:
 	docker-compose exec db bash -c 'mysql -u admin -psecret'
