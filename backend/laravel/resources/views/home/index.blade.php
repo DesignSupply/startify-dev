@@ -3,14 +3,14 @@
 @section('meta')
 <meta property="og:title" content="トップページ">
 <meta property="og:description" content="サイトのトップページです">
-<meta property="og:url" content="https://example.com/">
+<meta property="og:url" content="{{ url()->current() }}">
 <meta property="og:type" content="website">
 <meta property="og:image" content="{{ asset('assets/img/icon/ogp_default.jpg') }}">
 <meta name="twitter:title" content="トップページ">
 <meta name="twitter:description" content="サイトのトップページです">
-<meta name="twitter:url" content="https://example.com/">
+<meta name="twitter:url" content="{{ url()->current() }}">
 <meta name="description" content="サイトのトップページです">
-<link rel="canonical" href="https://example.com/">
+<link rel="canonical" href="{{ url()->current() }}">
 <title>サンプルサイト</title>
 <script type="application/ld+json">
     {
