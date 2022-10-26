@@ -1,9 +1,26 @@
 {
+    "name": "startify-dev",
+    "version": "1.0.0",
+    "description": "Development environment for Web Application",
     "private": true,
     "scripts": {
         "dev": "vite",
         "build": "vite build"
     },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:DesignSupply/startify-dev.git"
+    },
+    "bugs": {
+        "url": "https://github.com/DesignSupply/startify-dev/issues",
+        "email": "info@designsuply-web.com"
+    },
+    "author": {
+        "name": "Ogawa Shinya",
+        "email": "info@designsuply-web.com",
+        "url": "https://designsupply-web.com/"
+    },
+    "license": "MIT",
     "devDependencies": {
         "axios": "^1.1.2",
         "laravel-vite-plugin": "^0.6.0",
